@@ -45,12 +45,12 @@ const services = [
 const ourApps = [
   {
     name: 'MingleWise',
-    href: '#',
+    href: 'https://minglewise.com',
     icon: ChartBarIcon,
   },
   {
     name: 'NurtureWise',
-    href: '#',
+    href: 'https://nurturewise.com',
     icon: CursorArrowRaysIcon,
   },
   { name: 'PropWise',  
@@ -164,18 +164,8 @@ const resources = [
     href: '#',
     icon: BookmarkSquareIcon,
   },
-  {
-    name: 'Events',
-    description: 'See what meet-ups and other events we might be planning near you.',
-    href: '#',
-    icon: CalendarIcon,
-  },
 ]
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  { id: 2, name: 'How to use search engine optimization to drive traffic to your site', href: '#' },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-]
+
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(' ')
@@ -540,13 +530,6 @@ export default function Example() {
                           <div>
                             <h3 className="text-base font-medium text-gray-500">Recent Posts</h3>
                             <ul role="list" className="mt-4 space-y-4">
-                              {recentPosts.map((post) => (
-                                <li key={post.id} className="truncate text-base">
-                                  <a href={post.href} className="font-medium text-gray-900 hover:text-gray-700">
-                                    {post.name}
-                                  </a>
-                                </li>
-                              ))}
                             </ul>
                           </div>
                           <div className="mt-5 text-sm">
